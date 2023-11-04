@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+:root {
+    --blue: hsl(240, 88%, 60%);
+    --gray: rgb(139, 138, 138);
+    --black: #1f1e1e;
+    --white: #fff;
+    --lightgray: rgb(170, 169, 169);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--black);
+}
+
+main {
+    margin: 1.5rem 5rem;
+}
+
+/* Header Section Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.name {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links li a:hover, .nav li a:hover {
+    color: yellow;
+}
+
+.social-link a {
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--white);
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+
+
+/* About Section Styling */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.about-me {
+    flex: 1;
+}
+
+.emoji {
+height: 40px;
+}
+
+.about-me h2 {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.about-me span {
+    color: yellow;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 15px solid lightblue;
+}
+
+
+
+/* Tech Stack Section Styling */
+.stack {
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+}
+
+.tech-stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-stack-container h1 {
+    font-size: 32px;
+}
+
+.tech-stack-container h3 {
+    color: var(--gray);
+    font-size: 26px;
+}
+
+.tech-stack-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detail {
+    margin: 30px;
+}
+
+.detail img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Project Section Styling */
+.project {
+    padding: 40px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h2 {
+    margin-top: 20px;
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.project-card h6 {
+    color: var(--gray);
+    font-size: .9rem;
+}
+
+.project-card h5 {
+    margin-top: 20px;
+}
+
+.project-card span {
+    padding-right: .4rem;
+}
+
+.project-card a {
+   text-decoration: underline;
+}
+
+/* Footer Section Styling */
+.footer {
+    color: var(--gray);
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container h2 {
+    color: var(--white);
+}
+
+.details {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: var(--white);
+    margin: 0 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.design {
+    text-align: center;
+}
+
+.design a {
+    color: var(--white);
+}
+
+.design span {
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1024px) {
+    .name {
+        font-size: 20px;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+    
+    .about-me h2 {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        margin: auto;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 1;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+    
+      .nav-links.show {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .menu {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+      }
+    
+      .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+    
+      .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      .social-link {
+        display: none;
+      }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me,
+    .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me h2 {
+        max-width: none;
+        font-size: 28px;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+
+    .detail {
+        margin: 10px;
+    }
+
+    .project-card {
+        flex-basis: 100%;
+    }
+
+    .nav ul {
+        flex-direction: row;
+    }
+
+    .nav ul li {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 1.5rem 3rem;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .about-me h2 {
+        font-size: 24px;
+    }
+
+    .tech-stack-container h1 {
+        font-size: 24px;
+    }
+
+    .tech-stack-container h3 {
+        font-size: 18px;
+    }
+
+    .project-card {
+        flex-basis: 120%;
+    }
+
+    .nav a {
+        font-size: .9rem;
+    }
+}
