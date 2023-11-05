@@ -213,6 +213,10 @@ height: 40px;
    text-decoration: underline;
 }
 
+.project-card a:hover {
+    color: var(--blue);
+}
+
 /* Footer Section Styling */
 .footer {
     color: var(--gray);
