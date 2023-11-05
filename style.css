@@ -213,7 +213,7 @@ height: 40px;
    text-decoration: underline;
 }
 
-.project-card a:hover {
+.project-card span:hover {
     color: var(--blue);
 }
 
